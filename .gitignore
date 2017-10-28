@@ -1,3 +1,6 @@
+# Homebridge startup script for dev
+startHomebridge.sh
+
 # Logs
 logs
 *.log
@@ -56,4 +59,3 @@ typings/
 
 # dotenv environment variables file
 .env
-

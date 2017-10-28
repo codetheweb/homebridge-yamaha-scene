@@ -1,0 +1,33 @@
+{
+  "name": "homebridge-yamaha-scene",
+  "version": "0.1.0",
+  "description": "Turns on and off a Yamaha AV receiver and set it to a scene",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codetheweb/homebridge-yamaha-scene.git"
+  },
+  "keywords": [
+    "yamaha",
+    "iot",
+    "homebridge-plugin",
+    "speaker",
+    "siri"
+  ],
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.5"
+  },
+  "author": "Max Isom <codetheweb@icloud.com> (https://maxisom.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codetheweb/homebridge-yamaha-scene/issues"
+  },
+  "homepage": "https://github.com/codetheweb/homebridge-yamaha-scene#readme",
+  "dependencies": {
+    "yamaha-nodejs": "^0.7.8"
+  }
+}
