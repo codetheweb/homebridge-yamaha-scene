@@ -1,6 +1,6 @@
 {
   "name": "homebridge-yamaha-scene",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Turns on and off a Yamaha AV receiver and set it to a scene",
   "main": "index.js",
   "scripts": {
