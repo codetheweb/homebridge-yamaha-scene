@@ -8,10 +8,13 @@ Used to automate our home entertainment setup.
 `npm install -g homebridge-yamaha-scene`
 
 # Example config.json
+
+```javascript
     {
       "accessory": "YamahaScene",
       "name": "Yamaha AV",
       "ip": "xxx.yyy.0.zzz",
-      "scene": 1,
+      "initial_scene": 1,
       "volume": -20
     }
+```

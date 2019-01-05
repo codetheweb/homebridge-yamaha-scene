@@ -11,7 +11,7 @@ function YamahaScene(log, config) {
   this.log = log;
   this.name = config.name;
   this.volume = config.volume || -30;
-  this.initalScene = config.inital_scene || 1;
+  this.initialScene = config.initial_scene || 1;
   this.yamaha = new YamahaAPI(config.ip);
 
   this._service = new Service.Switch(this.name);
@@ -33,7 +33,7 @@ YamahaScene.prototype._set = function(on, callback) {
   if (on) {
     var that = this;
     this.yamaha.powerOn().then(function() {
-      that.yamaha.SendXMLToReceiver('<YAMAHA_AV cmd="PUT"><Main_Zone><Scene><Scene_Load>Scene ' + that.initalScene + '</Scene_Load></Scene></Main_Zone></YAMAHA_AV>').then(function() {
+      that.yamaha.SendXMLToReceiver('<YAMAHA_AV cmd="PUT"><Main_Zone><Scene><Scene_Load>Scene ' + that.initialScene + '</Scene_Load></Scene></Main_Zone></YAMAHA_AV>').then(function() {
         that.yamaha.setVolumeTo(that.volume * 10, 'Main_Zone').then(function() {
           callback(null, true);
         });
